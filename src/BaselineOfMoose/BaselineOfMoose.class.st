@@ -60,36 +60,54 @@ BaselineOfMoose >> customProjectAttributes [
 
 { #category : #dependencies }
 BaselineOfMoose >> famix: spec [
-	spec baseline: 'Famix' with: [ spec repository: 'github://moosetechnology/Famix:development/src' ]
+
+	spec
+		baseline: 'Famix'
+		with: [ 
+		spec repository: 'github://moosetechnology/Famix:development/src' ]
 ]
 
 { #category : #dependencies }
 BaselineOfMoose >> famixPresentation: spec [
-	spec baseline: 'FamixPresentation' with: [ spec repository: 'github://moosetechnology/FamixPresentation:v1.x.x/src' ]
+
+	spec baseline: 'FamixPresentation' with: [ 
+		spec repository:
+			'github://moosetechnology/FamixPresentation:v1.x.x/src' ]
 ]
 
 { #category : #dependencies }
 BaselineOfMoose >> famixReplication: spec [
-	spec baseline: 'FamixReplication' with: [ spec repository: 'github://moosetechnology/FamixReplication:v1.x.x/src' ]
+
+	spec baseline: 'FamixReplication' with: [ 
+		spec repository:
+			'github://moosetechnology/FamixReplication:v1.x.x/src' ]
 ]
 
 { #category : #dependencies }
 BaselineOfMoose >> famixTagging: spec [
-	spec baseline: 'FamixTagging' with: [ spec repository: 'github://moosetechnology/FamixTagging:v1.x.x/src' ]
+
+	spec
+		baseline: 'FamixTagging'
+		with: [ 
+		spec repository: 'github://moosetechnology/FamixTagging:master/src' ]
 ]
 
 { #category : #dependencies }
 BaselineOfMoose >> mooseAlgos: spec [
-	spec
-		baseline: 'MooseAlgos'
-		with: [ spec
-				loads: 'Core';
-				repository: 'github://moosetechnology/MooseAlgos:v1.x.x/src' ]
+
+	spec baseline: 'MooseAlgos' with: [ 
+		spec
+			loads: 'Core';
+			repository: 'github://moosetechnology/MooseAlgos:v1.x.x/src' ]
 ]
 
 { #category : #dependencies }
 BaselineOfMoose >> mooseEasy: spec [
-	spec baseline: 'MooseEasy' with: [ spec repository: 'github://moosetechnology/Moose-Easy:v2/src' ]
+
+	spec
+		baseline: 'MooseEasy'
+		with: [ 
+		spec repository: 'github://moosetechnology/Moose-Easy:v2/src' ]
 ]
 
 { #category : #dependencies }
@@ -103,14 +121,15 @@ BaselineOfMoose >> mooseIDE: spec [
 
 { #category : #dependencies }
 BaselineOfMoose >> neoCSV: spec [
-	spec
-		baseline: 'NeoCSV'
-		with: [ spec
-				loads: 'core';
-				repository: 'github://svenvc/NeoCSV/repository' ]
+
+	spec baseline: 'NeoCSV' with: [ 
+		spec
+			loads: 'core';
+			repository: 'github://svenvc/NeoCSV/repository' ]
 ]
 
 { #category : #accessing }
 BaselineOfMoose >> projectClass [
+
 	^ MetacelloCypressBaselineProject
 ]
